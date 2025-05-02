@@ -24,9 +24,10 @@ const SignIn = () => {
   };
 
   return (
-    <SafeAreaView className='bg-shite h-full'>
+    <SafeAreaView className='bg-white h-full'>
       <ScrollView contentContainerClassName='h-full'>
         <Image source={images.onboarding} className="w-full h-4/6" resizeMode="contain" />
+        
         <View className="px-10">
           <Text className='text-base text-center uppercase font-rubik text-black-200' >Welcomne to ReStateRN</Text>
           <Text className='text-3xl font-rubik-bold text-black-300 text-center mt-2'>
@@ -34,9 +35,10 @@ const SignIn = () => {
             <Text className='text-primary-300'>Your Ideal Home</Text>
           </Text>
           <Text className='txt-lg font-rubik text-black-200 text-center mt-12'>Login to ReState with Google</Text>
+          
           <TouchableOpacity 
-          onPress={handleLogin}
-          className='bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-5'
+            onPress={handleLogin}
+            className='bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-5'
           >
             <View className='flex flex-row items-center justify-center'>
               <Image 

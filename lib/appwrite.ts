@@ -137,7 +137,7 @@ export async function getProperties({ filter, query, limit }: {
         console.log(error);
         return [];
     }
-}
+};
 
 export async function getPropertyById({ id }: {id: string}) {
     try {
@@ -151,4 +151,4 @@ export async function getPropertyById({ id }: {id: string}) {
         console.log(error);
         return null;
     }
-}
+};

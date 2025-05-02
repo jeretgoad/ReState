@@ -22,10 +22,8 @@ export const GlobalProvider = ({ children }: { children: ReactNode }) => {
     const {
         data: user,
         loading,
-        refetch
-    } = useAppwrite({
-        fn: getUser,
-    })
+        refetch } = useAppwrite({ fn: getUser, })
+        
 //'!!' for nulls/obj to return booleans   // if return user == null/!user    // If return user is correct
     const isLoggedIn = !!user;           // !null = true => !true = false   //  !{name:'Jeret'} = false => !false = true
 
